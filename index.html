@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+<body>
+    <div class="main">
+    <h1 id="title">Order Your Pizza</h1>
+    <p id="description"> Make it Yours </p>
+    <form action="" id="survey-form">
+        <div>
+            <label for="name" id="name-label">Name: </label>
+            <input id="name" type="text" placeholder="name  last name" required>
+        </div> 
+        <div>
+            <label for="email" id="email-label">Email:
+            <input type="email" name="email" id="email" placeholder="name@gmail.com">
+            </label>
+        </div>
+
+        <div>  
+            <label for="number" id="number-label">How many?</label>
+            <input type="number" name="number" id="number" min="1" max="10" placeholder="1-10">
+        </div>
+        <div> 
+            <label for="dropdown">Special Options</label>
+            <select name="dropdown" id="dropdown">
+                <option value="value1">cheese Crust</option>
+                <option value="value2">Thin crust</option>
+                <option value="value3">Normal Crust</option>
+            </select>
+        </div>
+        
+            <p>Where would you want to eat?</p>  
+        <fieldset id="radio1">
+            <label for="in-store">In Store</label>
+            <input type="radio" name="radio1" value="1" id="in-store">
+            
+            <label for="home">Home</label>
+            <input type="radio" name="radio1" value="2" id="home">
+            
+            <label for="take-out">Take Out
+            <input type="radio" name="radio1" value="3" id="take-out">
+            </label>
+        </fieldset>
+        
+        
+        <fieldset>
+            <label for="cheese">Extra Cheese
+            <input type="checkbox" name="checkbox" value="cheese" id="checkbox">
+            </label>
+            <label for="pepperoni">Pepperoni
+            <input type="checkbox" name="checkbox" value="Pepperoni" id="checkbox">
+            </label>
+            <label for="pineapple">Pineapple
+            <input type="checkbox" name="" value="pineapple" id="pineapple">
+            </label>
+        </fieldset>
+        
+        <div>
+            <p>Something else in your mind? Let us know ...</p>
+        <textarea name="text" id="textarea" cols="30" rows="3"></textarea>
+        </div>
+        <button type="submit" id="submit"> Order </button>
+    </form>
+    </div>
+</body>
+</html>
